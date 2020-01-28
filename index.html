@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+  </head>
+  <body>
+      <section class="newFilm__modal player__modal--hidden">
+        <button class="newFilm__modal--close" type="button">Close</button>
+        <button class="newFilm__modal--view" type="button">Show</button>
+        <button class="newFilm__modal--edit hidden" type="button">Edit</button>
+          <form class="newFilm__modal--flex">
+            <input class="newFilm__input" type="file" name="photo" multiple accept="image/*,image/jpeg,image/png">
+            <div class="newFilm__title-view hidden"></div>
+            <input class="newFilm__title newFilm__input--size" type="text" placeholder="Add title...">
+            <div class="newFilm__runTime-view hidden"></div>
+            <input class="newFilm__runTime newFilm__input--size" type="text" placeholder="Add run time ...">
+            <div class="newFilm__rating-view hidden"></div>
+            <input class="newFilm__rating newFilm__input--size" type="text" placeholder="Add rating...">
+            
+            <div class="newFilm__description-view hidden"></div>
+            <textarea class="newFilm__description" type="text" placeholder="Add description..."></textarea>
+            <button type="button" class="newFilm__button">Save</button>
+          </form>
+        </section>
+        <section class="player__modal player__modal--hidden">
+          <button type="button" id="playerModal__close" class="playerModal__close">Close</button>
+          
+            
+          </section>
+          <div class="player__owerlay player__modal--hidden" ></div>
+
+    <header  class="header">
+      <div class="header__textWrap">
+        <div class="header__text"><span>m</span> <div class="header__textIcon"><img src="img/iconPlay.png"></div><span>vie store</span> </div>
+      </div>
+      <div class="header__menu">
+        <div id="btnCategoties" class="header__categories">Categories</div>
+        <div class="header__novetle">New Films</div>
+      </div>
+      <div class="header__search">
+        <input type="text" class="header__searchInp" placeholder="Search..." onkeyup="filter()">
+      </div>
+      </section>
+    </header>
+    <section id="modalCategories" class="modal__categories">
+      <div class="modal__content">
+        <div class="modal__options">Comedy</div>
+        <div class="modal__options">Horror</div>
+      
+        <div class="modal__close">CLOSE</div>
+      </div>
+    </section>
+ 
+    <section class="slider">
+      <div class="slider__content">
+      </div>
+    </section>
+    <section class="content__list">
+      <div class="content__listWrap">movie list</div>
+    </section>
+    
+    <section class="content">
+
+        <div class="content__wrap">
+          
+            <div class="content__section content__sectionNew">
+              <div class="content__sectionNew--text">
+                <span>ADD NEW MOVIE</span>
+                <div><img src="img/iconAdd.png" alt="img"></div>
+              </div>
+            </div>
+          
+        </div>
+       
+            
+      </section>
+  
+     <!-- <section class="content__list">
+        <div class="content__listWrap">movie list</div>
+    </section>  -->
+  
+  
+  
+    <script type="text/javascript" src="js/data.js"></script>
+   
+    <script type="text/javascript" src="js/movie.js"></script>
+    <script type="text/javascript" src="js/movieList.js"></script>
+    <script type="text/javascript" src="js/newmovieModalView.js"></script>
+    <script type="text/javascript" src="js/movieView.js"></script>
+    <script type="text/javascript" src="js/movieListView.js"></script>
+    
+    
+    
+    <script type="text/javascript" src="js/main.js"></script>
+    
+  
+  </body>
+</html>
+
+
